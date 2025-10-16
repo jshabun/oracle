@@ -1,0 +1,21 @@
+{
+  auto_https off
+}
+
+https://fantasy.localhost {
+  tls internal
+  encode gzip
+
+  route /api* {
+    reverse_proxy api:8001
+  }
+
+  reverse_proxy web:3000
+}
+
+# For production, replace with your domain and Let’s Encrypt:
+# your-domain.com {
+#   encode gzip
+#   reverse_proxy /api* api:8001
+#   reverse_proxy web:3000
+# }

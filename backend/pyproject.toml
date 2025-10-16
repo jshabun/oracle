@@ -1,0 +1,21 @@
+[project]
+name = "fantasy-assistant-api"
+version = "0.1.0"
+description = "Yahoo Fantasy NBA assistant API"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi",
+  "uvicorn[standard]",
+  "pydantic-settings",
+  "httpx",
+  "SQLAlchemy>=2.0",
+  "psycopg[binary]",
+  "alembic",
+  "redis",
+  "celery[redis]",
+  "pandas",
+  "numpy",
+]
+
+[tool.uvicorn]
+factory = false
