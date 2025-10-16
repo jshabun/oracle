@@ -1,5 +1,16 @@
 # Architecture Overview
 
+**Last Updated:** January 2025 | **Status:** Data Integration Complete ✅
+
+## 🎉 Recent Updates
+
+**Version 0.2.0 - Data Integration Layer Complete:**
+- ✅ `YahooDataMapper` - Parses Yahoo API responses to PlayerStats
+- ✅ `PlayerDataService` - Bridges Yahoo API with analytics engine  
+- ✅ Real draft recommendations using actual Yahoo player data
+- ✅ Player search, rankings, and category analysis
+- ✅ 26 working API endpoints across 5 modules
+
 ## System Design
 
 The Fantasy Basketball Oracle is built as a microservices architecture with clear separation of concerns:
